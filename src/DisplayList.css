@@ -1,0 +1,117 @@
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(../unchecked.png);
+    background-size: cover;
+    background-position: center;
+  
+    top: 5px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+
+}
+ul li.checked::before{
+    background-image: url(../checked.png);
+  
+}
+ul li:hover{
+  border-radius:10px;
+  background-color: #8fff8f;
+  
+}
+ul li .x{
+    position: absolute;
+    right:130px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: red;
+
+    line-height: 40px; 
+     /* this is equal to top=14px */
+    text-align: center;
+    border-radius: 50%;
+}
+ul li .x:hover{
+    background-color: #edeef0;
+}
+ul li .up{
+    position: absolute;
+    right:90px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #84f084;
+
+    line-height: 40px; 
+     /* this is equal to top=14px */
+    text-align: center;
+    border-radius: 50%;
+}
+.pin{
+background-color:orange;
+  border-radius:10px;
+}
+ul li .up:hover{
+    background-color: #edeef0;
+}
+ul li .down{
+    position: absolute;
+    right:30px;
+    top: 5px;
+    width: 60px;
+    height: 40px;
+    font-size: 22px;
+    color: #dc5fec;
+
+    line-height: 40px; 
+     /* this is equal to top=14px */
+    text-align: center;
+    border-radius: 20%;
+}
+ul li .down:hover{
+  /* width:40px; */
+    background-color: #edeef0;
+  
+}
+ul li .Date{
+    position: absolute;
+    right:140px;
+    top: 5px;
+    width: 250px;
+    height: 40px;
+    font-size: 22px;
+    color: #68dbf8;
+
+    line-height: 40px; 
+     /* this is equal to top=14px */
+    text-align: center;
+    border-radius: 20%;
+}
+ul li .down:hover{
+  /* width:40px; */
+    background-color: #edeef0;
+
+}
+.pinitem{
+  color:red;
+  font-size:17px;
+}
